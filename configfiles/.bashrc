@@ -121,7 +121,6 @@ if [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 
-echo "$sessions"
 echo "Welcome Jaydip"
 alias ls="ls -l --color"
 alias python="python3"
@@ -135,6 +134,6 @@ alias uni="ssh -X u1811150@joshua.dcs.warwick.ac.uk"
 alias dev="cd ~/Developement/"
 alias CD="cd"
 alias home="cd ~"
-alias bashrc="nano ~/.bashrc"
+alias bashrc="vim ~/.bashrc"
 alias public="cd ~/public_html/"
 alias version="lsb_release -a"
