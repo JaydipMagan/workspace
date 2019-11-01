@@ -1,0 +1,49 @@
+#vim tips
+
+#file related commands
+:q quit
+:q! force quit
+:w write changes
+:wq write and quit
+
+#editor related commands
+:set number
+
+#normal text manipulation 
+dd remove line 
+yy copy line 
+p paste copied line 
+xdd , where x = number of lines to delete u undo changes
+ctrl+r redo changes
+
+#searching
+/ to find text
+%s/text/replacementtext/gc , change all occurences and confirm with you
+%s/text/replacementtext/g , change all occurences 
+%s/text/replacementtext/ , change first occurences
+
+
+#moving 
+hjkl to move 
+w to move 1 word forward
+b to move 1 word backward
+e to move to end of word
+H to move to top of page
+M to move to middle of page
+L to move to end of page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
