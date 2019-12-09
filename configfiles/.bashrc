@@ -134,6 +134,7 @@ alias dev="cd ~/Developement/"
 alias CD="cd"
 alias home="cd ~"
 alias bashrc="vim ~/.bashrc"
+alias reload="source ~/.bashrc"
 alias public="cd ~/public_html/"
 alias version="lsb_release -a"
 alias gs="git status"
@@ -141,3 +142,12 @@ alias ga="git add"
 alias gc="git commit"
 alias gps="git push"
 alias gpl="git pull"
+
+#function to push git repos
+function g(){
+    ga .
+    gc -m $1
+    gps
+}
+
+
