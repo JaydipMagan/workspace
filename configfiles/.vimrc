@@ -607,5 +607,5 @@ map <C-n> :NERDTreeToggle<CR>
 "Color scheme
 colorscheme delek
 
-nmap <,> :NERDTreeToggle<CR>
-
+"toggle nerdtree using ctrl-d
+nmap <silent> <C-D> :NERDTreeToggle<CR>

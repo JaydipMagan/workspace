@@ -121,7 +121,9 @@ if [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
 fi
 
+workspace="~/Developement/Whatbot/"
 echo "Welcome Jaydip"
+echo "Workspace directory is set to $workspace"
 alias ls="ls -l --color"
 alias python="python3"
 alias LS="ls"
@@ -142,12 +144,21 @@ alias ga="git add"
 alias gc="git commit"
 alias gps="git push"
 alias gpl="git pull"
+alias gb="git branch"
 
 #function to push git repos
 function g(){
     ga .
     gc -m $1
     gps
+}
+
+#function to compile and run single java file
+function ja(){
+    jc $1
+    echo "Compiled $1"
+    j ${1::-5}
+
 }
 
 
